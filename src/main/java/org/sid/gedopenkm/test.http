@@ -1,0 +1,17 @@
+### Ajouter un document à OpenKM via l'API REST
+POST http://localhost:9090/api/documents/add
+Content-Type: application/json
+
+{
+  "pid": "",
+  "documentContentList": [
+    {
+      "fileName": "test-document.txt",
+      "content": "dGVzdCBjb250ZW51IGZpY2hpZXI="
+    }
+  ],
+  "indexes": {
+    "auteur": "Dalal",
+    "type": "txt"
+  }
+}
